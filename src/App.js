@@ -1,50 +1,51 @@
-import React, { useEffect, useState, useRef } from 'react';
-import './App.css';
-import VideoCard from './components/VideoCard';
-import BottomNavbar from './components/BottomNavbar';
-import TopNavbar from './components/TopNavbar';
+import React, { useEffect, useState, useRef } from "react";
+import "./App.css";
+import VideoCard from "./components/VideoCard";
+import BottomNavbar from "./components/BottomNavbar";
+import TopNavbar from "./components/TopNavbar";
+import RikProfilePic from "./assets/ric_profile_picture.jpeg";
 
 // This array holds information about different videos
 const videoUrls = [
   {
-    url: require('./videos/video1.mp4'),
-    profilePic: 'https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/9d429ac49d6d18de6ebd2a3fb1f39269~c5_100x100.jpeg?x-expires=1688479200&x-signature=pjH5pwSS8Sg1dJqbB1GdCLXH6ew%3D',
-    username: 'csjackie',
-    description: 'Lol nvm #compsci #chatgpt #ai #openai #techtok',
-    song: 'Original sound - Famed Flames',
+    url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+    profilePic: RikProfilePic,
+    username: "Riccardo",
+    description: "Some funny caption 1. #PD #toads",
+    song: "Ric FM - Ric Pestano",
     likes: 430,
     comments: 13,
     saves: 23,
     shares: 1,
   },
   {
-    url: require('./videos/video2.mp4'),
-    profilePic: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/eace3ee69abac57c39178451800db9d5~c5_100x100.jpeg?x-expires=1688479200&x-signature=wAkVmwL7lej15%2B16ypSWQOqTP8s%3D',
-    username: 'dailydotdev',
-    description: 'Every developer brain @francesco.ciulla #developerjokes #programming #programminghumor #programmingmemes',
-    song: 'tarawarolin wants you to know this isnt my sound - Chaplain J Rob',
-    likes: '13.4K',
+    url: "https://hips.hearstapps.com/hmg-prod/images/worlds-smallest-dogs-1647336453.jpg?crop=0.493xw:0.987xh;0.505xw,0.00326xh&resize=640:*",
+    profilePic: RikProfilePic,
+    username: "Ricster",
+    description: "Some funny caption 1. #PD #toads",
+    song: "Ric FM - Ric Pestano",
+    likes: "13.4K",
     comments: 3121,
     saves: 254,
     shares: 420,
   },
   {
-    url: require('./videos/video3.mp4'),
-    profilePic: 'https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4e6698b235eadcd5d989a665704daf68~c5_100x100.jpeg?x-expires=1688479200&x-signature=wkwHDKfNuIDqIVHNm29%2FRf40R3w%3D',
-    username: 'wojciechtrefon',
-    description: '#programming #softwareengineer #vscode #programmerhumor #programmingmemes',
-    song: 'help so many people are using my sound - Ezra',
+    url: "https://www.telegraph.co.uk/content/dam/news/2023/06/10/TELEMMGLPICT000296384999_16864028803870_trans_NvBQzQNjv4BqrCS9JVgwgb8GODK1xmD4xlHwtdpQwyNje2OyIL7x97s.jpeg?imwidth=680",
+    profilePic: RikProfilePic,
+    username: "Ric Pestano",
+    description: "Some funny caption 1. #PD #toads",
+    song: "Ric FM - Ric Pestano",
     likes: 5438,
     comments: 238,
     saves: 12,
     shares: 117,
   },
   {
-    url: require('./videos/video4.mp4'),
-    profilePic: 'https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/4bda52cf3ad31c728153859262c329db~c5_100x100.jpeg?x-expires=1688486400&x-signature=ssUbbCpZFJj6uj33D%2BgtcqxMvgQ%3D',
-    username: 'faruktutkus',
-    description: 'Wait for the end | Im RTX 4090 TI | #softwareengineer #softwareengineer #coding #codinglife #codingmemes ',
-    song: 'orijinal ses - Computer Science',
+    url: "https://www.dogstrust.org.uk/images/800x600/assets/2022-08/labrador_puppy_harefield_dogstrust.jpg",
+    profilePic: RikProfilePic,
+    username: "Just Ric",
+    description: "Some funny caption 1. #PD #toads",
+    song: "Ric FM - Ric Pestano",
     likes: 9689,
     comments: 230,
     saves: 1037,
@@ -63,7 +64,7 @@ function App() {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 0.8, // Adjust this value to change the scroll trigger point
     };
 
@@ -71,16 +72,19 @@ function App() {
     const handleIntersection = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const videoElement = entry.target;
-          videoElement.play();
+          // const videoElement = entry.target;
+          // videoElement.play();
         } else {
-          const videoElement = entry.target;
-          videoElement.pause();
+          // const videoElement = entry.target;
+          // videoElement.pause();
         }
       });
     };
 
-    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+    const observer = new IntersectionObserver(
+      handleIntersection,
+      observerOptions
+    );
 
     // We observe each video reference to trigger play/pause
     videoRefs.current.forEach((videoRef) => {
@@ -123,7 +127,6 @@ function App() {
       </div>
     </div>
   );
-  
 }
 
 export default App;
