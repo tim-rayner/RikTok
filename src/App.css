@@ -17,6 +17,7 @@ html {
   width: 100vw;
   overflow: scroll;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 
 .container::-webkit-scrollbar {
