@@ -5,13 +5,24 @@ import BottomNavbar from "./components/BottomNavbar";
 import TopNavbar from "./components/TopNavbar";
 import RikProfilePic from "./assets/ric_profile_picture.jpeg";
 
+import RicPhoto1 from "./assets/pictures/1.jpg";
+import RicPhoto2 from "./assets/pictures/2.jpg";
+import RicPhoto3 from "./assets/pictures/3.jpg";
+import RicPhoto4 from "./assets/pictures/4.jpg";
+import RicPhoto5 from "./assets/pictures/5.jpg";
+import RicPhoto6 from "./assets/pictures/6.jpg";
+import RicPhoto7 from "./assets/pictures/7.jpg";
+import RicPhoto8 from "./assets/pictures/8.jpg";
+import RicPhoto9 from "./assets/pictures/9.jpg";
+import RicPhoto10 from "./assets/pictures/10.jpg";
+
 // This array holds information about different videos
 const videoUrls = [
   {
-    url: "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*",
+    url: RicPhoto1,
     profilePic: RikProfilePic,
     username: "Riccardo",
-    description: "Some funny caption 1. #PD #toads",
+    description: "Some funny caption 1",
     song: "Ric FM - Ric Pestano",
     likes: 430,
     comments: 13,
@@ -19,10 +30,10 @@ const videoUrls = [
     shares: 1,
   },
   {
-    url: "https://hips.hearstapps.com/hmg-prod/images/worlds-smallest-dogs-1647336453.jpg?crop=0.493xw:0.987xh;0.505xw,0.00326xh&resize=640:*",
+    url: RicPhoto2,
     profilePic: RikProfilePic,
     username: "Ricster",
-    description: "Some funny caption 1. #PD #toads",
+    description: "Some funny caption 1",
     song: "Ric FM - Ric Pestano",
     likes: "13.4K",
     comments: 3121,
@@ -30,10 +41,10 @@ const videoUrls = [
     shares: 420,
   },
   {
-    url: "https://www.telegraph.co.uk/content/dam/news/2023/06/10/TELEMMGLPICT000296384999_16864028803870_trans_NvBQzQNjv4BqrCS9JVgwgb8GODK1xmD4xlHwtdpQwyNje2OyIL7x97s.jpeg?imwidth=680",
+    url: RicPhoto3,
     profilePic: RikProfilePic,
     username: "Ric Pestano",
-    description: "Some funny caption 1. #PD #toads",
+    description: "Some funny caption 1",
     song: "Ric FM - Ric Pestano",
     likes: 5438,
     comments: 238,
@@ -41,10 +52,76 @@ const videoUrls = [
     shares: 117,
   },
   {
-    url: "https://www.dogstrust.org.uk/images/800x600/assets/2022-08/labrador_puppy_harefield_dogstrust.jpg",
+    url: RicPhoto4,
+    profilePic: RikProfilePic,
+    username: "Code Daddy",
+    description: "Some funny caption",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto5,
     profilePic: RikProfilePic,
     username: "Just Ric",
-    description: "Some funny caption 1. #PD #toads",
+    description: "Some funny caption",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto6,
+    profilePic: RikProfilePic,
+    username: "Ric",
+    description: "Some funny caption 1",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto7,
+    profilePic: RikProfilePic,
+    username: "Ric",
+    description: "Some funny caption",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto8,
+    profilePic: RikProfilePic,
+    username: "Riccardo",
+    description: "Some funny caption",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto9,
+    profilePic: RikProfilePic,
+    username: "Ric",
+    description: "Some funny caption",
+    song: "Ric FM - Ric Pestano",
+    likes: 9689,
+    comments: 230,
+    saves: 1037,
+    shares: 967,
+  },
+  {
+    url: RicPhoto10,
+    profilePic: RikProfilePic,
+    username: "Riccardo",
+    description: "Some funny caption",
     song: "Ric FM - Ric Pestano",
     likes: 9689,
     comments: 230,
